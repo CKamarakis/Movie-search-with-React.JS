@@ -1,1 +1,1 @@
-# Movie-search-with-React.JS
+# Movies-search-with-React.JS

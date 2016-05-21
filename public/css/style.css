@@ -1,0 +1,73 @@
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+body,
+html {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 13px;
+  font-family: Roboto, Arial, Helvetica;
+  color: "#000";
+  background: "#fff"; }
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none; }
+
+.section-wrapper {
+  width: 100%;
+  height: auto; }
+
+.section-padding {
+  padding: 100px 0; }
+
+h2.section-title,
+h3.section-title {
+  font-size: 45px;
+  font-weight: 400;
+  margin: 0 0 30px;
+  text-align: center; }
+
+.section-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 30px;
+  text-align: center; }
+
+.container::after,
+.container::before {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.container {
+  width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .container {
+    width: 720px; } }
+
+@media (min-width: 351px) and (max-width: 767px) {
+  .container {
+    width: calc(100% - 30px); } }
+
+@media (max-width: 350px) {
+  .container {
+    width: calc(100% - 20px);
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
