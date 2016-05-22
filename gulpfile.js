@@ -10,6 +10,7 @@ var source = require('vinyl-source-stream');
 var config = {
     allSCSSFiles: 'develop/scss/**/*.scss',
     allJSFiles: 'develop/js/**/*.js',
+    FileJSX: './src/main.jsx',
     jsxFile: 'src/main.jsx',
     production: !!plugins.util.env.production,
     sourceMaps: !plugins.util.env.production
@@ -68,7 +69,7 @@ gulp.task('styles', function () {
 
 //Call JSX files
 gulp.task('browserify', ['styles'], function () {
-    return browserify({entries: './src/main.jsx', extensions: ['.jsx'], debug: true})
+    return browserify({entries: config.FileJSX, extensions: ['.jsx'], debug: true})
         .transform(babelify, {
             presets: ['es2015', 'react']
         })
@@ -106,6 +107,7 @@ gulp.task('fonts', ['scripts'], function () {
 gulp.task('watch', ['fonts'], function () {
     gulp.watch(config.allSCSSFiles, ['styles']);
     gulp.watch(config.allJSFiles, ['scripts']);
+    gulp.watch(config.FileJSX, ['browserify']);
 });
 
 

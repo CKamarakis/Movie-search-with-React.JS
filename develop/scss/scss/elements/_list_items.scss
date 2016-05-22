@@ -5,39 +5,51 @@
 }
 
 .item-box {
-  width: 100%;
+  position: relative;
+  width: 44%;
   padding: 15px;
   background: $items_bg;
   color: $light_txt;
-  margin-bottom: 30px;
+  margin: 0 3% 30px;
+  float: left;
+  min-height: 183px;
   @include create-round-corners(3px);
   &:last-of-type {
     margin-bottom: 0;
   }
+  &:nth-of-type(2n + 1) {
+    clear: both;
+  }
 }
 
-$item_image_width: 150px;
+$item_image_width: 100px;
 $item_content_margin: 15px;
 .item-box .item-box_img {
   width: $item_image_width;
   float: left;
-  img {
+  > a {
     width: $item_image_width;
-    height: $item_image_width;
-    margin: 0;
-    float: none;
-    @include create-round-corners(50%);
+    img {
+      width: $item_image_width;
+      height: auto;
+      margin: 0;
+      float: none;
+      @include simple-transition(300ms);
+      &:hover {
+        @include create-opacity(0.8);
+      }
+    }
   }
 }
 
 .item-box .item-box_content {
-  width: calc(100% - 165px);
+  width: calc(100% - 115px);
   display: inline-block;
   margin-left: $item_content_margin;
   h2 {
     font-size: 18px;
     font-weight: 700;
-    margin: 0 0 10px;
+    margin: 0 0 20px;
     line-height: 100%;
     a {
       color: $title;
@@ -59,22 +71,39 @@ $item_content_margin: 15px;
   }
 }
 
+.item-box a.more {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .items-wrapper {
+    width: 94%;
+  }
+}
+
 @media (max-width: 767px) {
   .items-wrapper {
     width: calc(100% - 20px);
     max-width: 400px;
+  }
+  .item-box {
+    width: 100%;
+    margin: 0 0 30px;
   }
 
   .item-box .item-box_img {
     margin-bottom: 20px;
     float: none;
     width: 100%;
-    img {
-      margin: 0 auto;
-      float: none;
-      display: block;
+    >a,
+    >a img {
+        margin: 0 auto;
+        float: none;
+        display: block;
+      }
     }
-  }
 
   .item-box .item-box_content {
     width: 100%;
@@ -86,9 +115,23 @@ $item_content_margin: 15px;
   }
 
   .item-box a.more {
+    position: relative;
+    right: auto;
+    bottom: auto;
     float: none;
     width: 100%;
     text-align: center;
+  }
+
+  .item-box ul.info-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    li {
+      float: none;
+      margin: 0 3px !important;
+    }
   }
 
 }
