@@ -1,5 +1,22 @@
-$black: '#000';
-$white: '#fff';
+$black: #000000;
+$dark_grey: #33353D;
+$dark_blue: #2C3E50;
+$medium_blue: #2980B9;
+$light_blue: #3498DB;
+$dark_purple: #41466C;
+$light_grey: #CCCCCC;
+$red: #E74C3C;
+$whitish: #ECF0F1;
+$white: #FFFFFF;
 
-$main_txt: $black;
-$main_bg: $white;
+$main_txt: $dark_grey;
+$light_txt: $whitish;
+$main_bg: $medium_blue;
+$inner_bg: $white;
+$title: $dark_blue;
+$title_hover: $light_blue;
+$border: $light_grey;
+$button: $medium_blue;
+$button_border: $light_blue;
+$items_bg: $red;
+$items_h: $dark_purple;

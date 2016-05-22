@@ -1,0 +1,22 @@
+ul.info-tags {
+  margin-bottom: 15px;
+  li {
+    display: inline-block;
+    padding: 4px 10px;
+    background: $inner_bg;
+    color: $items_bg;
+    margin-right: 4px;
+    height: 20px;
+    line-height: 12px;
+    width: auto;
+    font-size: 11px;
+    font-weight: 500;
+    @include create-round-corners(11px);
+    &:last-of-type {
+      margin-right: 0px;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}

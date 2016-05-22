@@ -1,0 +1,37 @@
+button {
+  display: block;
+  width: auto;
+  padding: 12px 6px;
+  line-height: 20px;
+  text-align: center;
+  color: $light_txt;
+  background: $button;
+  border: 2px solid $button;
+  box-shadow: 0;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  @include create-round-corners(3px);
+  @include simple-transition(300ms);
+  &:hover,
+  &:focus {
+    background: $button_border;
+    border: 2px solid $button_border;
+  }
+}
+
+a.more {
+  float: right;
+  display: inline-block;
+  color: $light_txt ;
+  background: $title;
+  font-weight: 500;
+  width: auto;
+  padding: 6px 8px;
+  @include create-round-corners(3px);
+  @include simple-transition(300ms);
+  &:focus,
+  &:hover {
+    background: $button;
+  }
+}

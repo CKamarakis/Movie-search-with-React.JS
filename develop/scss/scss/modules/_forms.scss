@@ -1,0 +1,48 @@
+input[type='text'] {
+  height: 50px;
+  padding: 12px;
+  border: 0;
+  line-height: 22px;
+  width: 100%;
+  font-size: 14px;
+  border: 2px solid $border;
+  @include create-round-corners(3px);
+  @include simple-transition(300ms);
+  &:focus {
+    outline: none;
+    border: 2px solid $title_hover;
+  }
+}
+
+span.lens {
+  display: block;
+  width: 30px;
+  height: 26px;
+  span {
+    position: relative;
+    display: block;
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+    }
+    &:before {
+      width: 3px;
+      height: 13px;
+      right: 11px;
+      top: 14px;
+      background: $main_bg;
+      @include transform(rotate(17deg));
+
+    }
+    &:after {
+      width: 11px;
+      height: 11px;
+      right: 0;
+      top: 0;
+      border: 3px solid $main_bg;
+      @include create-round-corners(50%);
+    }
+  }
+}

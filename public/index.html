@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Movie search with React</title>
-      <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
-      <link type="text/css" rel="stylesheet" media="all"  src="css/style.css">
-  </head>
-  <body>
-      <div id="movies">
-          
-      </div>
-    <script type="text/javascript"  src="js/main.js"></script>
-  </body>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" media="all" href="css/style.css">
+</head>
+<body>
+<section class="section-wrapper section-padding">
+    <section class="container">
+        <section class="content-wrapper ">
+            <section class="intro-section padding-20 section-separator">
+                <h1 class="section-title">Search for movies</h1>
+                <p class="section-subtitle">Find everything about your favorite movies</p>
+            </section>
+            <div class="clearfix"></div>
+            <section class="form-section section-separator">
+                <form class="inline-form">
+                    <div class="search-input">
+                        <input type="text" name="movie" placeholder="Rocky, You don't mess with the Zohan etc"/>
+                        <span class="lens"><span></span></span>
+                    </div>
+                    <button>Search</button>
+                </form>
+                <div class="clearfix"></div>
+            </section>
+            <div class="clearfix"></div>
+            <section class="items-wrapper">
+                <article class="item-box">
+                    <div class="item-box_img">
+                        <a href="#"><img src="img/dr_evil.jpg" title=""/></a>
+                    </div>
+                    <div class="item-box_content">
+                        <h2><a href="#">Austin Powers The Spy who shagged me</a></h2>
+                        <p>Austin Powers The Spy who shagged me Austin Powers The Spy who shagged me Austin Powers The
+                            Spy who shagged me</p>
+                        <ul class="info-tags">
+                            <li>Year:&nbsp;<span>2000</span></li>
+                            <li>Category:&nbsp;<span>Comedy</span></li>
+                            <li>IMDB:&nbsp;<span>8.9</span></li>
+                        </ul>
+                        <a class="more" href="#">Details</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </article>
+                <div class="clearfix"></div>
+                <article class="item-box">
+                    <div class="item-box_img">
+                        <a href="#"><img src="img/dr_evil.jpg" title=""/></a>
+                    </div>
+                    <div class="item-box_content">
+                        <h2><a href="#">Austin Powers & mini me</a></h2>
+                        <p>Austin Powers The Spy who shagged me Austin Powers The Spy who shagged me Austin Powers The
+                            Spy who shagged me</p>
+                        <ul class="info-tags">
+                            <li>Year:&nbsp;<span>2000</span></li>
+                            <li>Category:&nbsp;<span>Comedy</span></li>
+                            <li>IMDB:&nbsp;<span>8.9</span></li>
+                        </ul>
+                        <a class="more" href="#">Details</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </article>
+                <div class="clearfix"></div>
+            </section>
+        </section>
+    </section>
+</section>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
