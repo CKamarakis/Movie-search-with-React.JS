@@ -23,7 +23,6 @@ var Movie = React.createClass({
     },
 
     onChange: function (event, movieData) {
-        console.log(movieData);
         this.setState({
             movieData: movieData
         });

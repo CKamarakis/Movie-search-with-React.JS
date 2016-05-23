@@ -31,9 +31,10 @@ $item_content_margin: 15px;
       height: auto;
       margin: 0;
       float: none;
+      @include grayscale(50%);
       @include simple-transition(300ms);
       &:hover {
-        @include create-opacity(0.8);
+        @include grayscale(0%);
       }
     }
   }

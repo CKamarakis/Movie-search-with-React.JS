@@ -3,9 +3,6 @@ var List = require('./List.jsx');
 var Reflux = require('reflux');
 var Actions = require('../../actions/actions.jsx');
 var MoviesStore = require('../../store/movies-store.jsx');
-var Reflux = require('reflux');
-var Actions = require('../../actions/actions.jsx');
-var MoviesStore = require('../../store/movies-store.jsx');
 
 var ListManager = React.createClass({
     mixins: [Reflux.listenTo(MoviesStore, 'onChange')],

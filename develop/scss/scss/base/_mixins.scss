@@ -32,3 +32,8 @@
 	transform: $transforms;
 }
 
+@mixin grayscale($percentage) {
+  -webkit-filter: grayscale($percentage);
+  filter: grayscale($percentage);
+}
+

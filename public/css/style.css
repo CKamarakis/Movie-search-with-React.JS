@@ -185,13 +185,15 @@ h1.section-title {
       height: auto;
       margin: 0;
       float: none;
+      -webkit-filter: grayscale(50%);
+      filter: grayscale(50%);
       -webkit-transition: 300ms !important;
       -moz-transition: 300ms !important;
       -o-transition: 300ms !important;
       transition: 300ms !important; }
       .item-box .item-box_img > a img:hover {
-        opacity: 0.8;
-        filter: alpha(opacity=80); }
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
 
 .item-box .item-box_content {
   width: calc(100% - 115px);
