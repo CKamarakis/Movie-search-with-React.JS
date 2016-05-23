@@ -20,12 +20,17 @@ var MoviesStore = Reflux.createStore({
     getSingleMovie: function (id) {
         HTTP.get(baseUrl + '?plot=full&r=json&i=' + id)
             .then(function (json) {
-                this.movie = json;
+                this.movieData = json;
+                this.triggerMovieUpdate();
             }.bind(this));
     },
 
     triggerMoviesUpdate: function () {
         this.trigger('change', this.movies);
+    },
+
+    triggerMovieUpdate: function () {
+        this.trigger('change', this.movieData);
     }
 
 });

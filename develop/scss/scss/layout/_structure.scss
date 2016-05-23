@@ -74,14 +74,31 @@ ul {
   padding: 20px;
 }
 
+.single-wrap {
+  width: calc(100% - 20px);
+  margin: 40px auto;
+  padding: 20px 15px 0;
+  @include create-round-corners(4px);
+}
+
 @media (min-width: 768px) and (max-width: 980px) {
   .container {
     width: 720px;
+  }
+
+  .single-wrap {
+    width: calc(100% - 30px);
+    padding: 25px 20px 0;
   }
 }
 
 @media (min-width: 981px) {
   .container {
     width: 990px;
+  }
+
+  .single-wrap {
+    width: calc(100% - 40px);
+    padding: 30px 30px 5px;
   }
 }

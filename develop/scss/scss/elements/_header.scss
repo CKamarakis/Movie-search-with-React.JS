@@ -4,8 +4,12 @@ h1.section-title {
   margin: 0 0 10px;
   text-align: center;
   color: $title;
-  :hover,
-  :focus{
-    color: $title_hover;
+  a{
+    color: $main_bg;
+    @include simple-transition(300ms);
+  }
+  a:hover,
+  a:focus{
+      color: $title_hover
   }
 }

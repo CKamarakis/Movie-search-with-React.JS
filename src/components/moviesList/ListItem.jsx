@@ -11,7 +11,7 @@ var ListItem = React.createClass({
         return (
             <article className="item-box">
                 <div className="item-box_img">
-                    <Link to={movieLink}><img src={movie.Poster} title=""/></Link>
+                    <Link to={movieLink}><img src={movie.Poster} alt={movie.Title}/></Link>
                 </div>
                 <div className="item-box_content">
                     <h2><Link to={movieLink}>{movie.Title}</Link></h2>

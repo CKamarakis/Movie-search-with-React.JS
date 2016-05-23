@@ -6,7 +6,8 @@ var MoviesStore = require('../../store/movies-store.jsx');
 
 
 var List = React.createClass({
-    mixins: [Reflux.listenTo(MoviesStore,'onChange')],
+     mixins: [Reflux.listenTo(MoviesStore, 'onChange')],
+
     getInitialState: function () {
         return {
             movies: []

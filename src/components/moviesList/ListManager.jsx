@@ -24,10 +24,6 @@ var ListManager = React.createClass({
         });
     },
 
-    componentWillMount: function () {
-        Actions.getMovies(this.state.newItemText);
-    },
-
     handleSubmit: function (e) {
         e.preventDefault();
         var currentItems = this.state.movies;
@@ -51,13 +47,14 @@ var ListManager = React.createClass({
 
 
     render: function () {
+
         return (
             <section id="movies-search">
                 <section className="form-section section-separator">
                     <form className="inline-form" onSubmit={this.handleSubmit}>
                         <div className="search-input">
                             <input onChange={this.onTextChange} type="text" value={this.state.newItemText}
-                                   placeholder="Rocky, You don't mess with the Zohan etc"/>
+                                   placeholder="Rocky, Rambo, Star Wars etc"/>
                             <span className="lens"><span></span></span>
                         </div>
                         <button>Search</button>
