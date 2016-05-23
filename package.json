@@ -30,6 +30,7 @@
     "react-dom": "^15.1.0",
     "react-router": "^2.4.1",
     "reflux": "^0.4.1",
+    "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "whatwg-fetch": "^1.0.0"
   }

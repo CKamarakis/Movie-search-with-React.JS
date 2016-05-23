@@ -5,6 +5,7 @@ var Q = require('q');
 var browserify = require('browserify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
 
 
 var config = {
@@ -75,6 +76,8 @@ gulp.task('browserify', ['styles'], function () {
         })
         .bundle()
         .pipe(source('main.js'))
+        .pipe(buffer())
+        .pipe(plugins.uglify())
         .pipe(gulp.dest('public/js'));
 });
 

@@ -5,11 +5,11 @@ h1.section-title {
   text-align: center;
   color: $title;
   a{
-    color: $main_bg;
+    color: $title_hover;
     @include simple-transition(300ms);
   }
   a:hover,
   a:focus{
-      color: $title_hover
+      color: $title;
   }
 }

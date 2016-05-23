@@ -1,5 +1,5 @@
 .items-wrapper {
-  padding: 40px 0;
+  padding: 35px 0 10px;
   width: 80%;
   margin: 0 auto;
 }
@@ -14,9 +14,6 @@
   float: left;
   min-height: 183px;
   @include create-round-corners(3px);
-  &:last-of-type {
-    margin-bottom: 0;
-  }
   &:nth-of-type(2n + 1) {
     clear: both;
   }
@@ -59,8 +56,8 @@ $item_content_margin: 15px;
       @include simple-transition(300ms);
       &:hover,
       &:focus {
-        color: $title;
-        border-bottom: 3px solid $items_h;
+        color: $title_hover;
+        border-bottom: 3px solid $title_hover;
       }
     }
   }
@@ -83,6 +80,7 @@ $item_content_margin: 15px;
     width: calc(100% - 20px);
     max-width: 400px;
   }
+
   .item-box {
     width: 100%;
     margin: 0 0 30px;
@@ -92,13 +90,15 @@ $item_content_margin: 15px;
     margin-bottom: 20px;
     float: none;
     width: 100%;
-    >a,
-    >a img {
-        margin: 0 auto;
-        float: none;
-        display: block;
-      }
+    > a,
+    > a img {
+      margin: 0 auto;
+      float: none;
+      display: block;
+      width: 100%;
+      max-width: 300px;
     }
+  }
 
   .item-box .item-box_content {
     width: 100%;

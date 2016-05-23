@@ -1,22 +1,39 @@
 $black: #000000;
 $dark_grey: #33353D;
-$dark_blue: #2C3E50;
-$medium_blue: #2980B9;
-$light_blue: #3498DB;
+//$dark_blue: #2C3E50;
+//$medium_blue: #2980B9;
+//$light_blue: #3498DB;
 $dark_purple: #41466C;
 $light_grey: #CCCCCC;
 $red: #E74C3C;
-$whitish: #ECF0F1;
+//$whitish: #ECF0F1;
+
 $white: #FFFFFF;
+
+$dark_blue: #225378;
+$medium_blue: #1695A3;
+$light_blue: #ACF0F2;
+$orange: #EB7F00;
+$whitish: #F3FFE2;
 
 $main_txt: $dark_grey;
 $light_txt: $whitish;
 $main_bg: $medium_blue;
 $inner_bg: $white;
+
+
+//$title: $dark_blue;
+//$title_hover: $light_blue;
+//$border: $light_grey;
+//$button: $medium_blue;
+//$button_border: $light_blue;
+//$items_bg: $red;
+//$items_h: $dark_purple;
+
 $title: $dark_blue;
-$title_hover: $light_blue;
+$title_hover: $medium_blue;
 $border: $light_grey;
 $button: $medium_blue;
-$button_border: $light_blue;
-$items_bg: $red;
-$items_h: $dark_purple;
+$button_border: $dark_blue ;
+$items_bg: $orange;
+$items_h: $dark_blue;
